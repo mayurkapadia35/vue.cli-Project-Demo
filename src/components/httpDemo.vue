@@ -118,9 +118,9 @@
           } else {
             setTimeout(() => {
               if (binding.arg == 'background') {
-                el.style.backgroundColor = binding.value.mainColor;
+                el.style.backgroundColor = binding.value;
               } else {
-                el.style.color = binding.value.mainColor;
+                el.style.color = binding.value;
               }
             }, delay);
           }
@@ -129,9 +129,6 @@
     }
   }
 </script>
-
-
-
 <style scoped>
 
 </style>
