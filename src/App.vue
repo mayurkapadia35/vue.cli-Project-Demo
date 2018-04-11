@@ -5,7 +5,8 @@
   <!--</div>-->
     <!--<app-servers></app-servers>-->
     <!--<form-controls></form-controls>-->
-    <httpDemo></httpDemo>
+    <!--<httpDemo></httpDemo>-->
+  <filters></filters>
 </template>
 
 <script>
