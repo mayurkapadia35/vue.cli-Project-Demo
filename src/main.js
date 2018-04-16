@@ -5,6 +5,11 @@ import Demo from './components/Demo'
 import forms from './components/input_form'
 import VueResource from 'vue-resource'
 import httpDemo from './components/httpDemo'
+import parent from './components/parent'
+import userdetail from './components/userDetail'
+import useredit from './components/userEdit'
+
+
 // import BootstrapVue from '../node_modules/bootstrap-vue'
 Vue.config.productionTip = false
 Vue.use(VueResource);
@@ -41,6 +46,9 @@ Vue.http.interceptors.push((request,next)=>{
 Vue.component('app-servers', Demo)
 Vue.component('form-controls',forms)
 Vue.component('httpDemo',httpDemo)
+Vue.component('parent',parent)
+Vue.component('app-user-edit',useredit)
+Vue.component('app-user-detail',userdetail)
 
 new Vue({
   el: '#app',

@@ -5,11 +5,18 @@
   <!--</div>-->
     <!--<app-servers></app-servers>-->
     <!--<form-controls></form-controls>-->
-    <httpDemo></httpDemo>
+  <parent></parent>
+    <!--<httpDemo></httpDemo>-->
 </template>
 
 <script>
+  import parent from './components/parent'
 
+  export default {
+    components:{
+      appParent: parent
+    }
+  }
 </script>
 
 <style>
