@@ -9,6 +9,13 @@ import parent from './components/parent'
 import userdetail from './components/userDetail'
 import useredit from './components/userEdit'
 
+export const eventBus = new Vue({
+  methods: {
+    changeAge (age) {
+      this.$emit('agewasedited',age);
+    }
+  }
+});
 
 // import BootstrapVue from '../node_modules/bootstrap-vue'
 Vue.config.productionTip = false
